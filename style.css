@@ -9,21 +9,27 @@ body {
 }
 
 .container {
-  justify-content: center;
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: auto;
+  padding: 20px; 
+  width: 80%;
 }
 
 .slide {
   position: absolute;
   top: 25px;
-  right: 25%;
   opacity: 0;
   transition: all 1s ease-in-out;
 }
-
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding: 200px; /* Adjust as needed */
+  }
+}
 
 
 #jawabanMakan {
@@ -135,7 +141,6 @@ button:hover {
     justify-content: center;
     font-family: 'DM Serif Display', serif;
     font-size: 30px;
-    height: 100vh;
 }
 
 
@@ -208,9 +213,6 @@ button:hover {
     background-color :black;}
   
   
-
-
-
   /*Food*/
   .food {
     color: var(--primary-color);
