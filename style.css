@@ -9,6 +9,7 @@ body {
 }
 
 .container {
+  justify-content: center;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -18,6 +19,7 @@ body {
 .slide {
   position: absolute;
   top: 25px;
+  right: 25%;
   opacity: 0;
   transition: all 1s ease-in-out;
 }
@@ -452,3 +454,4 @@ button:hover {
 .prev {
   transform: translateY(-100%);
 }
+
