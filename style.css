@@ -1,0 +1,454 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.container {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slide {
+  position: absolute;
+  top: 25px;
+  opacity: 0;
+  transition: all 1s ease-in-out;
+}
+
+
+
+#jawabanMakan {
+  color: var(--secondary-color);
+}
+#jawabanTempat {
+  color: var(--secondary-color);
+}
+#jawabanAlasan {
+  color: var(--secondary-color);
+}
+
+:root {
+    --primary-color: #f3f3f3;
+    --secondary-color: #343434;
+}
+.creamMode {
+    --primary-color: #343434;
+    --secondary-color: #FFE6C7;
+}
+.brownMode {
+  --primary-color: #f3f3f3;
+  --secondary-color: #3F2305;
+}
+.orangeMode {
+  --primary-color: #f3f3f3;
+  --secondary-color: #ED7D31;
+}
+.yellowMode {
+  --primary-color: #343434;
+  --secondary-color: #FFD93D;
+}
+.greenMode {
+  --primary-color: #f3f3f3;
+  --secondary-color: #65B741;
+}
+.toscaMode {
+  --primary-color: #f3f3f3;
+  --secondary-color: #37B5B6;
+}
+.blueMode {
+  --primary-color: #f3f3f3;
+  --secondary-color: #11009E;
+}
+.purpleMode {
+  --primary-color: #f3f3f3;
+  --secondary-color: #711DB0;
+}
+.redMode {
+  --primary-color: #f3f3f3;
+  --secondary-color: #B80000;
+}
+.pinkMode {
+  --primary-color: #f3f3f3;
+  --secondary-color: #F72798;
+}
+.whiteMode {
+  --primary-color: #343434;
+  --secondary-color: #f3f3f3;
+}
+.grayMode {
+  --primary-color: #000000;
+  --secondary-color: #A9A9A9;
+}
+.blackMode {
+  --primary-color: #f3f3f3;
+  --secondary-color: #000;
+}
+
+
+
+button {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border: none;
+  height: 30px;
+  width: 50px;
+  border-radius: 50px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+button:hover {
+  opacity: 70%;
+  transition: ease-in-out;
+  transition-duration: 0.1s;
+}
+
+
+/*Hello*/
+.hello {
+    color: var(--primary-color);
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-family: 'DM Serif Display', serif;
+    font-size: 30px;
+    height: 100vh;
+}
+
+
+/*Know*/
+.know {
+    color: var(--primary-color);
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-family: 'DM Serif Display', serif;
+    font-size: 30px;
+    height: 100vh;
+}
+
+
+/*Colour*/
+.favorite {
+    flex-direction: column;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-family: 'DM Serif Display', serif;
+    font-size: 30px;
+    height: 100vh;
+  }  
+  p {
+    color: var(--primary-color);
+    text-align: center;
+    font-size: 30px;
+    margin: 20px;
+  }
+  .colors {
+   display:flex;  
+   justify-content: space-evenly; 
+  }
+  .color {
+    border: 5px solid var(--primary-color);
+    width:30px; 
+    height:30px; 
+    border-radius :50%; 
+    margin :5px;  
+  }
+  .cream {
+    background-color:#FFE6C7;
+    cursor: pointer;}
+  .brown {
+    cursor: pointer;
+    background-color :#3F2305;}
+  .orange {
+    cursor: pointer;
+    background-color :#ED7D31;}
+  .yellow {
+    cursor: pointer;
+    background-color :FFD93D;}
+  .green {
+    cursor: pointer;
+    background-color :#65B741;}
+  .tosca {
+    cursor: pointer;
+    background-color :#37B5B6;}
+  .blue {
+    cursor: pointer;
+    background-color :#11009E;}
+  .purple {
+    cursor: pointer;
+    background-color :#711DB0;}
+  .red {
+    cursor: pointer;
+    background-color :#B80000;}
+  .pink {
+    cursor: pointer;
+    background-color :#F72798;}
+  .white {
+    cursor: pointer;
+    background-color :#f3f3f3;}
+  .gray {
+    cursor: pointer;
+    background-color :gray;}
+  .black {
+    cursor: pointer;
+    background-color :black;}
+  
+  
+
+
+
+  /*Food*/
+  .food {
+    color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-family: 'DM Serif Display', serif;
+    font-size: 30px;
+    height: 100vh;
+  }
+  .food div{
+    background-color: var(--secondary-color);
+    border: solid 3px var(--primary-color);
+    border-radius: 50px;
+    width: 500px;
+    height: 50px;
+  }
+  .food div input {
+    background-color: var(--primary-color);
+    width: 495px;
+    height: 45px;
+    margin-top: 2px;
+    text-align: center;
+    border-radius: 50px;
+    border: none;
+  }
+
+
+  /*Place*/
+ .place {
+  color: var(--primary-color);
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-family: 'DM Serif Display', serif;
+  font-size: 30px;
+  height: 100vh;
+  flex-direction: column;
+ }
+ .place p {
+  color: var(--primary-color);
+  font-family: 'DM Serif Display', serif;
+  font-size: 30px;
+ }
+ .place div{
+  background-color: var(--secondary-color);
+  border: solid 3px var(--primary-color);
+  border-radius: 50px;
+  width: 500px;
+  height: 50px;
+}
+.place div input {
+  background-color: var(--primary-color);
+  width: 495px;
+  height: 45px;
+  margin-top: 2px;
+  text-align: center;
+  border-radius: 50px;
+  border: none;
+}
+
+
+/*Love your self*/
+.fillbar {
+  color: var(--primary-color);
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-family: 'DM Serif Display', serif;
+  font-size: 30px;
+  height: 100vh;
+  flex-direction: column;
+}
+.bar {
+  position: relative;
+  background-color: var(--primary-color);
+  border-radius: 50px;
+  height: 40px;
+  width: 510px;
+}
+.rangeBar {
+  outline: none;
+  width: 500px;
+  height: 30px;
+  border-radius: 50px;
+  background: var(--primary-color);
+  -webkit-appearance: none;
+  overflow: hidden;
+  margin-top: 5;
+  justify-content: center;
+}
+.rangeBar::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+  background: var(--secondary-color);
+  box-shadow: -415px 0 0 400px var(--secondary-color);
+  cursor: pointer;
+}
+
+
+
+
+/*Hangout*/
+.hangout {
+  color: var(--primary-color);
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-family: 'DM Serif Display', serif;
+  font-size: 30px;
+  height: 100vh;
+  flex-direction: column;
+}
+.button-hangout {
+  font-size: 20px;
+  display: flex;
+  width: 100vh;
+  height: 5px;
+  justify-content: center;
+  align-items: center;
+}
+.okay {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  margin-top: 50px;
+  margin-right: 20px;
+  padding: 5px;
+  width: 170px;
+  border-radius: 50px;
+  height: 50px;
+  font-family: 'DM Serif Display', serif;
+  font-size: 20;
+}
+.sorry {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  margin-top: 50px;
+  margin-left: 20px;
+  padding: 5px;
+  width: 170px;
+  align-items: center;
+  border-radius: 50px;
+  height: 50px;
+  font-family: 'DM Serif Display', serif;
+  font-size: 20;
+}
+
+
+
+/*if okay*/
+.yey {
+  color: var(--primary-color);
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-family: 'DM Serif Display', serif;
+  font-size: 30px;
+  height: 100vh;
+}
+
+
+/*if can't*/
+.can {
+  color: var(--primary-color);
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-family: 'DM Serif Display', serif;
+  font-size: 30px;
+  height: 100vh;
+  flex-direction: column;
+}
+.can div{
+  background-color: var(--secondary-color);
+  border: solid 3px var(--primary-color);
+  border-radius: 50px;
+  width: 500px;
+  height: 50px;
+}
+.can div input {
+  background-color: var(--primary-color);
+  width: 495px;
+  height: 45px;
+  margin-top: 2px;
+  text-align: center;
+  border-radius: 50px;
+  border: none;
+}
+
+
+/*Okay*/
+.oke {
+  color: var(--primary-color);
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-family: 'DM Serif Display', serif;
+  font-size: 30px;
+  height: 100vh;
+}
+
+
+/*see you*/
+.thanks {
+  color: var(--primary-color);
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-family: 'DM Serif Display', serif;
+  font-size: 30px;
+  height: 100vh;
+  flex-direction: column;
+}
+.attention {
+  margin: -20px;
+}
+
+
+.active {
+  opacity: 1;
+  transform: scale(1);
+  z-index: 1;
+}
+
+.next {
+  transform: translateY(100%);
+}
+
+.prev {
+  transform: translateY(-100%);
+}

@@ -1,0 +1,114 @@
+<html>
+    <head>
+        <title>Ai First Web</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Heebo:wght@700&family=Noto+Serif:wght@100&family=Single+Day&display=swap" rel="stylesheet">
+    </head>
+        <body>
+            <div class="container">
+                <!--Hello-->
+                <div class="slide active hello" id="slide1">
+                    <div>
+                        <p>HELLO!</p>
+                    </div>
+                </div>
+
+                <!--i wanna more know about you-->
+                <div class="slide next know" id="slide2">
+                    <div>
+                        <p>I wanna more know about you</p>
+                    </div>
+                </div>
+
+                <!--favorite color-->
+                <div class="slide next favorite" id="slide3">
+                    <p>Choose the color you like!</p>
+                    <div class="colors 1">
+                        <div class="color cream" id="cream" onclick="change('creamMode')"></div>
+                        <div class="color brown" id="brown" onclick="change('brownMode')"></div>
+                        <div class="color orange" id="orange" onclick="change('orangeMode')"></div>
+                        <div class="color yellow" id="yellow" onclick="change('yellowMode')"></div>
+                        <div class="color green" id="green" onclick="change('greenMode')"></div>
+                        <div class="color tosca" id="tosca" onclick="change('toscaMode')"></div>
+                        <div class="color blue" id="blue" onclick="change('blueMode')"></div>
+                        <div class="color purple" id="purple" onclick=" change('purpleMode')"></div>
+                        <div class="color red" id="red" onclick="change('redMode')"></div>
+                        <div class="color pink" id="pink" onclick="change('pinkMode')"></div>
+                    </div>
+                    <div class="colors 2">
+                        <div class="color white" id="white" onclick="change('whiteMode')"></div>
+                        <div class="color gray" id="gray" onclick="change('grayMode')"></div>
+                        <div class="color black" id="black" onclick="change('blackMode')"></div>
+                    </div>
+                    <button class="next" onclick="next(3)">Next</button>
+                </div> 
+
+                <!--what food do you like?-->
+                <div class="slide next food" id="slide4">
+                    <p>What food do you like?</p>
+                    <div>
+                        <input name="jawabanMakan" id="jawabanMakan" type="text" placeholder="Answer here"/>
+                    </div>
+                    <button class="next" onclick="next(4)">Next</button>
+                </div>
+
+                <!--choose place-->
+                <div class="slide next place" id="slide5">
+                    <p>Choose the place you like</p>
+                    <div>
+                        <input name="jawabanTempat" id="jawabanTempat" type="text" placeholder="type place what you like (like mall, park, aquarium, etc)"/>
+                    </div>
+                    <button class="next" onclick="next(5)">Next</button>
+                </div>
+
+                <!--how much you love yourself?-->
+                <div class="slide next fillbar" id="slide6">
+                    <div>
+                        <p>How much you love yourself?</p>
+                        <div class="bar">
+                            <input id="rangeBar" type="range" class="rangeBar" min="1" max="100" value="1"/>
+                        </div>  
+                        <button class="next" onclick="next(6)">Next</button>
+                    </div>
+                </div>
+
+                <!--Let's hang out sometime-->
+                <div class="slide next hangout" id="slide7">
+                    <p>Can we hangout sometime?</p>
+                    <div class="button-hangout">
+                        <button class="okay" id="okay" onclick="next(7)">Okay</button>
+                        <button class="sorry" id="sorry" onclick="next(8)">I can't</button>
+                    </div>
+                </div>
+
+                <!--if okay-->
+                <div class="slide next yey" id="slide8" >
+                    <p>YEYYY!!!</p>
+                </div>
+
+                <!--if can't-->
+                <div class="slide next can" id="slide9">
+                    <p>Can I know why we can't hangout?</p>
+                    <div>
+                        <input name="jawabanAlasan" id="jawabanAlasan" type="text" placeholder="Answer here"/>      
+                        <button class="next" onclick="next(9)">Next</button>
+                    </div>
+                </div>
+                
+                <!--okay-->
+                <div class="slide next oke" id="slide10">
+                    <p>Okay</p>
+                </div>
+
+                 <!--see you-->
+                <div class="slide next thanks" id="slide11">
+                    <p class="attention">Thanks for spend your time to me</p>
+                    <p class="see">See youu...</p>
+                    <p>~ Ai ~</p>
+                </div>
+            </div>
+            <script src="script.js"></script>
+            </body>
+</html>
