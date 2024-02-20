@@ -142,6 +142,7 @@ button:hover {
     font-family: 'DM Serif Display', serif;
     font-size: 30px;
     height: 100vh;
+    width: 100vh;
 }
 
 
@@ -437,6 +438,7 @@ button:hover {
   font-family: 'DM Serif Display', serif;
   font-size: 30px;
   height: 100vh;
+  width: 100vh;
   flex-direction: column;
 }
 .attention {
