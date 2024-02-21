@@ -34,6 +34,7 @@ body {
   }
   .slide {
     height: 100svh;
+    scale: 135%;
   }
 }
 
